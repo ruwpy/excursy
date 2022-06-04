@@ -1,0 +1,47 @@
+@use '../util' as *;
+
+h1, h2, h3 {
+  margin-top: 0;
+  color: var(--color-headings);
+}
+
+h1 {
+  font-size: rem(36);
+  font-weight: 800;
+  color: var(--color-headings);
+
+  @include breakpoint-up('medium'){
+    font-size: rem(56);
+  }
+}
+
+h2 {
+  font-size: rem(24);
+  font-weight: 800;
+
+  @include breakpoint-up('medium') {
+    font-size: rem(52);
+  }
+}
+
+h3 {
+  font-size: rem(18);
+
+  @include breakpoint-up('medium') {
+    font-size: rem(28);
+  }
+}
+
+p {
+  margin-top: 0;
+  font-size: rem(12);
+  color: var(--color-body);
+
+  @include breakpoint-up('medium'){
+    font-size: rem(20);
+  }
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}

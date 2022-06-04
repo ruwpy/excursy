@@ -1,0 +1,60 @@
+@use '../util/' as *;
+
+.footer {
+  background: var(--color-headings);
+  display: flex;
+  justify-content: space-between;
+
+  &__image {
+    width: rem(250);
+    position: absolute;
+
+    &--right {
+      transform: translateX(rem(350));
+    }
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+
+    &__logo {
+      margin-top: rem(35);
+
+      @include breakpoint-up(medium) {
+        margin-top: rem(56);
+      }
+    }
+
+    &__list {
+      list-style: none;
+      padding-left: 0;
+      font-size: rem(12);
+      display: flex;
+      gap: rem(50);
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 rem(55) rem(83);
+
+      @include breakpoint-up(medium) {
+        margin-bottom: rem(40);
+        font-size: rem(18);
+      }
+
+      &__item a {
+        color: white;
+      }
+    }
+
+
+    &__icons {
+      margin: rem(40) 0;
+      display: flex;
+      gap: rem(24);
+    }
+  }
+}

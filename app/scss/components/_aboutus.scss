@@ -1,0 +1,102 @@
+@use '../util/' as *;
+
+.about {
+  margin-top: rem(50);
+  margin-bottom: rem(48);
+
+  @include breakpoint-up('medium') {
+    margin-top: rem(140);
+    margin-bottom: rem(160);
+  }
+  
+  &__image {
+    width: 100%;
+  }
+  
+  &__content {
+    text-align: center;
+
+    @include breakpoint-up('medium') {
+      text-align: left;
+    }
+  }
+  
+  &__heading {
+    margin-top: rem(24);
+    margin-bottom: rem(16);
+  }
+
+  &__text {
+    line-height: 180%;
+    margin-bottom: rem(16);
+
+    @include breakpoint-up('medium') {
+      margin-bottom: rem(35);
+    }
+  }
+
+  &__statistics {
+    display: grid;
+    flex-direction: column;
+    float: left;
+    width: 100%;
+    justify-content: center;
+
+    @include breakpoint-up('medium') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__container {
+    margin: rem(16) auto;
+    width: 100%;
+    float: left;
+  }
+}
+
+.item-about {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  @include breakpoint-up('medium') {
+    flex-direction: column;
+  }
+
+  &__container {
+    padding: rem(10);
+    background: #FFEDE6;
+    margin-right: rem(30);
+    width: rem(64);
+    height: rem(45);
+    border-radius: 6px;
+
+    @include breakpoint-up('medium') {
+      margin-right: 0;
+      padding: 0;
+      background: none;
+      margin-bottom: rem(8);
+      width: fit-content;
+    }
+  }
+
+  &__num {
+    font-size: rem(18);
+    color: var(--color-accent);
+    font-weight: bold;
+
+    @include breakpoint-up('medium') {
+      font-size: rem(40);
+    }
+  }
+
+  &__text {
+    font-size: rem(16);
+    font-weight: 500;
+    margin-bottom: 0;
+
+    @include breakpoint-up('medium') {
+      font-size: rem(24);
+    }
+  }
+}

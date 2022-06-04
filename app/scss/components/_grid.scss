@@ -1,0 +1,27 @@
+@use '../util/' as *;
+// TODO хедер, грид..
+
+.grid {
+  display: grid;
+
+  &--cols-2 {
+    grid-template-columns: 1fr 1fr;
+
+    @include breakpoint-down('small'){
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &--header {
+    align-items: center;
+
+  }
+
+  &--cols-3 {
+    grid-template-columns: 1fr;
+
+    @include breakpoint-up('medium') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

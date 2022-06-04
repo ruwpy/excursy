@@ -1,0 +1,72 @@
+@use '../util/' as *;
+
+.hero {
+  margin-top: rem(44);
+
+  &__companies {
+    display: flex;
+    justify-content: center;
+    gap: rem(28.66);
+    margin-bottom: rem(24);
+  }
+    
+  &__companies img {
+    max-height: rem(15.23);
+
+    @include breakpoint-up('medium') {
+      max-height: rem(40);
+     }
+  }
+}
+
+.hero-content {
+  text-align: center;
+  
+  @include breakpoint-up('medium') {
+    text-align: left;
+    margin-top: rem(50);
+    margin-bottom: rem(160);
+  }
+
+  &__heading {
+    margin-bottom: rem(20);
+
+    @include breakpoint-up('medium') {
+      margin-bottom: rem(36);
+     }
+  }
+
+  &__text {
+    font-size: rem(14);
+    margin-bottom: rem(30);
+
+    @include breakpoint-up('medium') {
+      margin-bottom: rem(74);
+      max-width: rem(400);
+      font-size: rem(18);
+     }
+  }
+    
+  &__img {
+    width: 100%;
+    margin-bottom: rem(48);
+
+    @include breakpoint-up('medium'){
+      transform: translateY(rem(-50));
+    }
+  }
+  
+  &__btns {
+    display: flex;
+    gap: rem(20);
+    justify-content: center;
+    margin-bottom: rem(48);
+
+    @include breakpoint-up('medium') {
+      justify-content: start;
+      margin-bottom: 0;
+    }
+  }
+}
+  
+  

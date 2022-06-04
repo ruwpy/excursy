@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excursy</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <!-- Navigation Bar -->
+
+        <nav class="nav">
+          <a href="/"
+            ><img class="nav__logo" src="images/logo.svg" alt="logo"
+          /></a>
+          <img
+            class="nav__toggler hide__for__pc"
+            src="images/burger.svg"
+            alt=""
+          />
+          <ul class="nav__list">
+            <li class="nav__list__item nav__list__item--home">
+              <a href="#">Home</a>
+            </li>
+            <li data-goto=".section_1" class="nav__list__item">
+              <a href="#">About Us</a>
+            </li>
+            <li data-goto=".section_2" class="nav__list__item">
+              <a href="#">Our interests</a>
+            </li>
+            <li data-goto=".section_3" class="nav__list__item">
+              <a href="#">Values</a>
+            </li>
+            <li data-goto=".section_4" class="nav__list__item">
+              <a href="#">Current Projects</a>
+            </li>
+          </ul>
+          <button class="btn btn--primary">Sign Up</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="grid grid--cols-2 grid--header">
+        <div class="hero-content">
+          <h1 class="hero-content__heading">
+            Let’s take a <br />
+            tour to <span class="highlight">Blockchain</span> <br />
+            Technology
+          </h1>
+          <p class="hero-content__text">
+            We are highly focused by blockchain technology that will lead
+            positively to the future web.
+          </p>
+          <div class="hero-content__btns">
+            <button class="btn btn--primary">
+              Get Started
+              <img class="btn__arrow" src="images/arrow.svg" alt="" />
+            </button>
+            <button class="btn btn--secondary">Learn More</button>
+          </div>
+        </div>
+        <img class="hero-content__img" src="images/heading.svg" alt="" />
+      </div>
+      <div class="hero__companies">
+        <img class="companies__logo" src="images/slack.png" alt="" />
+        <span class="line"></span>
+        <img class="companies__logo" src="images/woocomerce.png" alt="" />
+        <span class="line"></span>
+        <img class="companies__logo" src="images/amazon.png" alt="" />
+        <span class="line"></span>
+        <img class="companies__logo" src="images/microsoft.png" alt="" />
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+
+    <section class="about container section_1">
+      <div class="grid grid--cols-2">
+        <img class="about__image" src="images/aboutus.png" alt="" />
+        <div class="about__content">
+          <h2 class="about__heading">About Us</h2>
+          <p class="about__text">
+            We generated names based on a multitude of factors and picked the
+            one that resonated with us the most. Our founder first engaged with
+            the blockchain in 2013
+          </p>
+          <div class="about__statistics">
+            <div class="about__container">
+              <div class="item-about">
+                <div class="item-about__container">
+                  <p class="item-about__num">600+</p>
+                </div>
+                <p class="item-about__text">Project Done</p>
+              </div>
+            </div>
+            <div class="about__container">
+              <div class="item-about">
+                <div class="item-about__container">
+                  <p class="item-about__num">950+</p>
+                </div>
+                <p class="item-about__text">Happy Clients</p>
+              </div>
+            </div>
+            <div class="about__container">
+              <div class="item-about">
+                <div class="item-about__container">
+                  <p class="item-about__num">30+</p>
+                </div>
+                <p class="item-about__text">Employee</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Interests Section -->
+
+    <section class="interests container section_2">
+      <h2 class="interests__heading">Our Interests</h2>
+      <p class="interests__text">
+        It's the norm these days to lay out a roadmap that gives stakeholders an
+        indication of the direction that the project aspires to go. Inspired by
+        Elon Musk’s 2006 masterplan, these are our skeleton ambitions.
+      </p>
+      <div class="interests__content grid grid--cols-3">
+        <div class="item-interests">
+          <div
+            class="item-interests__container item-interests__container--yellow"
+          >
+            <img class="item-interests__icon" src="images/chain.svg" alt="" />
+          </div>
+          <div class="item-interests__content">
+            <h3 class="item-interests__title">Blockchain product</h3>
+            <p class="item-interests__text">
+              Create something novel that has never been done on the blockchain
+              before Build a product
+            </p>
+            <a class="item-interests__link" href="#">Read More...</a>
+          </div>
+        </div>
+        <div class="item-interests">
+          <div
+            class="item-interests__container item-interests__container--pink"
+          >
+            <img class="item-interests__icon" src="images/star.svg" alt="" />
+          </div>
+          <div class="item-interests__content">
+            <h3 class="item-interests__title">Quality Product</h3>
+            <p class="item-interests__text">
+              Create something novel that has never been done on the blockchain
+              before Build a product
+            </p>
+            <a class="item-interests__link" href="#">Read More...</a>
+          </div>
+        </div>
+        <div class="item-interests">
+          <div
+            class="item-interests__container item-interests__container--green"
+          >
+            <img
+              class="item-interests__icon"
+              src="images/accepted.svg"
+              alt=""
+            />
+          </div>
+          <div class="item-interests__content">
+            <h3 class="item-interests__title">Viable product</h3>
+            <p class="item-interests__text">
+              Create something novel that has never been done on the blockchain
+              before Build a product
+            </p>
+            <a class="item-interests__link" href="#">Read More...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Values Section -->
+
+    <section class="ourvalues container section_3">
+      <div class="grid grid--cols-2">
+        <img class="ourvalues__image" src="images/ourvalues.png" alt="" />
+        <div class="ourvalues__content">
+          <h2 class="ourvalues__heading">Our Values</h2>
+          <p class="ourvalues__text">
+            The team members may change, but the quality of our project
+            execution will not.An outstanding team can build a product in any
+            industry. Don’t be intimidated by incumbents.
+          </p>
+          <button class="btn btn--primary">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Current Projects -->
+
+    <section class="currentpj container section_4">
+      <h2 class="currentpj__heading">Current Projects</h2>
+      <div class="currentpj__content grid grid--cols-3">
+        <div class="item-currentpj">
+          <img
+            class="item-currentpj__image"
+            src="images/currentprojects-1.png"
+            alt=""
+          />
+          <h3 class="item-currentpj__title">
+            Certified Great Expectations Lover
+          </h3>
+          <p class="item-currentpj__text">
+            Create something novel that has never been done on the blockchain
+            before Build a product
+          </p>
+          <a class="item-currentpj__link" href="#">Read More...</a>
+        </div>
+        <div class="item-currentpj">
+          <img
+            class="item-currentpj__image"
+            src="images/currentprojects-2.png"
+            alt=""
+          />
+          <h3 class="item-currentpj__title">
+            Certified Great Expectations Lover
+          </h3>
+          <p class="item-currentpj__text">
+            Create something novel that has never been done on the blockchain
+            before Build a product
+          </p>
+          <a class="item-currentpj__link" href="#">Read More...</a>
+        </div>
+        <div class="item-currentpj">
+          <img
+            class="item-currentpj__image"
+            src="images/currentprojects-3.png"
+            alt=""
+          />
+          <h3 class="item-currentpj__title">
+            Certified Great Expectations Lover
+          </h3>
+          <p class="item-currentpj__text">
+            Create something novel that has never been done on the blockchain
+            before Build a product
+          </p>
+          <a class="item-currentpj__link" href="#">Read More...</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer-content">
+        <img class="footer-content__logo" src="images/logo-footer.svg" alt="" />
+        <div class="footer-content__icons">
+          <svg class="icon">
+            <use xlink:href="images/sprite.svg#facebook"></use></svg
+          ><svg class="icon">
+            <use xlink:href="images/sprite.svg#twitch"></use></svg
+          ><svg class="icon">
+            <use xlink:href="images/sprite.svg#linkedin"></use></svg
+          ><svg class="icon">
+            <use xlink:href="images/sprite.svg#reddit"></use>
+          </svg>
+        </div>
+        <ul class="footer-content__list">
+          <li class="footer-content__list__item"><a href="#">Home</a></li>
+          <li class="footer-content__list__item"><a href="#">About us</a></li>
+          <li class="footer-content__list__item">
+            <a href="#">Our interests</a>
+          </li>
+          <li class="footer-content__list__item"><a href="#">Values</a></li>
+          <li class="footer-content__list__item">
+            <a href="#">Current Projects</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="app/js/script.js"></script>
+  </body>
+</html>

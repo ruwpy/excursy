@@ -1,0 +1,61 @@
+@use '../util/' as *;
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: rem(18);
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  font-family: var(--font);
+  color: var(--color-body);
+}
+
+// visibility
+
+
+.hide__for__pc {
+  @include breakpoint-up('medium'){
+    display: none;
+  }
+}
+
+.collapsed {
+  @include breakpoint-down('small') {
+    display: none;
+  }
+}
+
+// text highlight
+
+.highlight {
+  color: var(--color-accent);
+}
+
+// line
+
+.line {
+  display: block;
+  border-right: 1px solid #C0C5D2;
+
+  &--accent {
+    width: 100%;
+    border-bottom: 2px solid var(--color-accent);
+
+    @include breakpoint-up('medium') {
+      border-bottom: 0;
+      border-right: 2px solid var(--color-accent);
+    }
+  }
+
+  @include breakpoint-down('small'){
+    display: none;
+  }
+}

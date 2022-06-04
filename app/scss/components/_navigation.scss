@@ -1,0 +1,51 @@
+@use '../util/' as *;
+
+.header {
+  margin-top: rem(44);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include breakpoint-up('medium') {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: rem(140);
+
+    @include breakpoint-up('medium'){
+      width: rem(240);
+    }
+  }
+
+  &__list {
+    width: 100%;
+    list-style: none;
+    line-height: 2;
+    text-align: center;
+    padding-left: 0;
+    gap: rem(45);
+    
+    @include breakpoint-up('medium') {
+      display: flex;
+      width: fit-content;
+    }
+
+    &__item a {
+      color: var(--color-headings);
+    }
+
+    &__item {
+
+      &--home a {
+        font-weight: bold;
+        color: var(--color-accent);
+      }
+    }
+  }
+}
