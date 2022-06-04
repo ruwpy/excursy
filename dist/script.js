@@ -1,2 +1,2 @@
-"use strict";console.log("hi");
+"use strict";var hamburger=document.querySelector(".nav__toggler"),navMenu=Array.from(document.querySelectorAll(".collapsed")),animation=document.querySelector(".nav__list");hamburger.addEventListener("click",(function(){navMenu.forEach((function(e){e.classList.toggle("collapsed")}))}));
 //# sourceMappingURL=script.js.map

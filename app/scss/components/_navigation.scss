@@ -1,8 +1,15 @@
 @use '../util/' as *;
 
 .header {
-  margin-top: rem(44);
+  padding-top: rem(15);
+  padding-bottom: rem(15);
+
+  @include breakpoint-up('medium') {
+    padding-top: rem(44);
+  }
 }
+
+
 
 .nav {
   display: flex;
@@ -13,6 +20,22 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__toggler {
+    display: inline-block;
+
+    @include breakpoint-up('medium') {
+      display: none;
+    }
+  }
+
+  &__button {
+    margin-inline: auto;
+
+    @include breakpoint-up('medium'){
+      margin-inline: 0;
+    }
   }
 
   &__logo {
@@ -30,11 +53,14 @@
     text-align: center;
     padding-left: 0;
     gap: rem(45);
+    bottom: 100%;
+    animation: fade-in 0.4s cubic-bezier(0.64, 0.03, 0.36, 0.99);
     
     @include breakpoint-up('medium') {
       display: flex;
       width: fit-content;
     }
+
 
     &__item a {
       color: var(--color-headings);

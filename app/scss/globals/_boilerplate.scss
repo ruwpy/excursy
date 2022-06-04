@@ -20,13 +20,6 @@ body {
 
 // visibility
 
-
-.hide__for__pc {
-  @include breakpoint-up('medium'){
-    display: none;
-  }
-}
-
 .collapsed {
   @include breakpoint-down('small') {
     display: none;
